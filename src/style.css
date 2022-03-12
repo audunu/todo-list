@@ -1,47 +1,69 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Hubballi', cursive;
 }
 
-#content {
+body{
+    padding: 0px;
+    margin: 0px;
     display: flex;
 }
 
-.project-container {
-    height: 100vh;
-    min-width: 200px;
+.left-container {
     width: 30%;
+    min-width: 300px;
     background-color: grey;
-    padding: 3rem 2rem;
+    padding: 30px 50px;
+    color: white;
+    font-size: 3rem;
 }
 
-.task-container {
-    height: 100vh;
-    min-width: 500px;
+.divider {
+    height: 1px;
     width: 80%;
-    background-color: rgb(36, 34, 34);
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-}
-
-.spacer {
-    height: 0.1rem;
-    border-bottom: solid 0.1rem lightgray;
-    margin: 1rem 0 1rem 0;
-}
-
-.taskBtn, .cancelBtn {
+    border-top: 0.5px;
+    border-color: white;
     background-color: white;
+    margin-top: 20px;
 }
 
-.taskBtn {
-    align-self: flex-end;
-    flex: 0 0 3%;
-    width: fit-content;
+.project {
+    font-size: 2rem;
+    margin: 20px 0 20px 0;
+    padding: 7px 0 7px 0;
+    color: rgb(49, 49, 49);
 }
 
-.blue {
-    background-color: blue;
+.project-selected {
+    color: white;
+}
+
+.project:hover {
+    background-color: rgb(170, 169, 169);
+    color: white;
+}
+
+.add-project-button > span {
+    color: red;
+}
+
+.add-project-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+.right-container {
+    width: 70%;
+    min-width: 600px;
+    background-color: rgb(58, 58, 58);
 }
